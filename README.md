@@ -1,29 +1,10 @@
 # demoComponentes
 
-This template should help get you started developing with Vue 3 in Vite.
+Es un exemple de com treballar amb components amb Vue 3. 
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Hi ha un pare (App.vue) i 2 components fills. 
+El pare passa informació als fills mitjançant props. 
+Els fills es comuniquen amb els pares mitjançant emits. 
+Els dos components fills son equivalents, la única diferència es que estan programats: 
+- Fent servir Options API <script>
+- Fent servir Composition API <script setup>
