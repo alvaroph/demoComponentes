@@ -32,11 +32,16 @@ import componenteComposition from "./components/componenteComposition.vue";
     <ul>
       <li v-for="dato in datos" :key="dato">{{ dato }}</li>
     </ul> 
-    <h1>Componente escrito en Objects</h1>
-    <componenteObjects :vector="datos" @botonPulsado="sacarMensaje" />
 
-    <h1>Componente escrito en Composition</h1>
-    <componenteComposition :vector="datos" @botonPulsado="sacarMensaje" />
+    <componenteObjects :vector="datos" @botonPulsado="sacarMensaje">
+      <h2>Component per objects</h2>
+    </componenteObjects>
+
+    <componenteComposition :vector="datos" @botonPulsado="sacarMensaje" >
+      <h2>
+        Component per Composition
+      </h2>
+      </componenteComposition>
   </div>
  
 </template>

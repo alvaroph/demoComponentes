@@ -1,5 +1,7 @@
 <template>
   <div>
+    
+  <slot></slot>
     Has pulsado {{ contadorPulsaciones }} veces<br>
     <button v-for="item in vector" :key="item" @click="pulsarBoton(item)">
       {{ item }}
